@@ -1,0 +1,125 @@
+/* Google Fonts - เลือกฟอนต์ที่ดูทางการและอ่านง่าย */
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #fcfaf2; /* สีขาวงาช้างแบบกระดาษโบราณ */
+    color: #2c2c2c;
+}
+
+/* ส่วนที่ 1: Navbar - เน้นสีแดงเข้มจักรพรรดิตัดด้วยทอง */
+.navbar {
+    background-color: #8b0000 !important; /* Dark Red */
+    border-bottom: 3px solid #d4af37; /* Gold Line */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.logo-spu { color: #ffffff; font-weight: 600; font-size: 24px; letter-spacing: 1px; }
+.logo-sit { color: #d4af37; font-weight: 600; font-size: 24px; } /* สีทอง */
+
+.nav-link { 
+    color: #ffffff !important; 
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.nav-link:hover { 
+    color: #d4af37 !important; /* เปลี่ยนเป็นสีทองเวลา Hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #8b0000;
+    border: 1px solid #d4af37;
+}
+
+.dropdown-item { color: #fff; }
+.dropdown-item:hover {
+    background-color: #d4af37;
+    color: #8b0000;
+}
+
+/* Banner - ใช้รูปแนวพู่กันหรือวิวภูเขาจะเข้ามาก */
+.hero-banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://mpics.mgronline.com/pics/Images/560000009594202.JPEG');
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+    color: #d4af37; /* ข้อความสีทอง */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Sections */
+.section-padding { padding: 80px 0; }
+
+h2 {
+    color: #8b0000;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #d4af37;
+}
+
+/* Movie Card */
+.movie-card {
+    transition: all 0.4s ease;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+.movie-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 25px rgba(139, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #8b0000;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+}
+
+.btn-primary:hover {
+    background-color: #d4af37;
+    border: 1px solid #8b0000;
+    color: #8b0000;
+}
+
+/* Form Contact */
+.btn-success {
+    background-color: #2e4d3d; /* สีเขียวหยกเข้ม */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1f362b;
+}
+
+/* Footer - สีดำถ่านตัดทอง */
+footer {
+    background-color: #1a1a1a;
+    border-top: 5px solid #d4af37;
+    padding: 50px 0;
+}
+
+.social-icons a {
+    color: #d4af37;
+    font-size: 26px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover { 
+    color: #fff; 
+    transform: scale(1.2);
+}
+
+.text-muted { color: #aaa !important; }

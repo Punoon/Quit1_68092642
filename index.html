@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="logo-spu">Hikari</span><span class="logo-sit"> Mado</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button" data-bs-toggle="dropdown">ภาพยนตร์</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal1">เธอผู้เปล่งประกายกว่าแสงดาว As Beautiful As You</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal2">รักสุดป่วนของคุณชายสุดเป๊ะ Hello Mr.Gu</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal3">รักนี้ไม่ลืมเลือน Unforgettable Love</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">สัมผัสโลกของภาพยนตร์สุดมันส์</h1>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <h2 class="text-center mb-5">รายการภาพยนตร์</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card movie-card h-100 shadow-sm border-0">
+                    <img src="https://s.isanook.com/mv/0/ud/34/174471/asbeautifulasyou.jpg?ip/resize/w728/q80/jpg" class="card-img-top" alt="Movie 1">
+                    <div class="card-body">
+                        <h5 class="card-title">เธอผู้เปล่งประกายกว่าแสงดาว As Beautiful As You</h5>
+                        <p class="card-text text-muted">เรื่องย่อเบื้องต้นของภาพยนตร์เรื่องนี้...</p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal1">ดูรายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card movie-card h-100 shadow-sm border-0">
+                    <img src="https://s.isanook.com/mv/0/ud/34/174471/hellomr.gu.jpg?ip/resize/w728/q80/jpg" class="card-img-top" alt="Movie 2">
+                    <div class="card-body">
+                        <h5 class="card-title"> รักสุดป่วนของคุณชายสุดเป๊ะ Hello Mr.Gu</h5>
+                        <p class="card-text text-muted">เรื่องย่อเบื้องต้นของภาพยนตร์เรื่องนี้...</p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal2">ดูรายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card movie-card h-100 shadow-sm border-0">
+                    <img src="https://s.isanook.com/mv/0/ud/34/174471/unforgettablelove.jpg?ip/resize/w728/q80/jpg" class="card-img-top" alt="Movie 3">
+                    <div class="card-body">
+                        <h5 class="card-title">รักนี้ไม่ลืมเลือน Unforgettable Love</h5>
+                        <p class="card-text text-muted">เรื่องย่อเบื้องต้นของภาพยนตร์เรื่องนี้...</p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal3">ดูรายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="bg-light section-padding">
+        <div class="container text-center">
+            <h2 class="mb-4">เกี่ยวกับเรา</h2>
+            <p class="about-text mx-auto">ยินดีต้อนรับสู่โปรเจกต์ SIT Movie ฐานข้อมูลภาพยนตร์ที่สร้างขึ้นเพื่อรวบรวมอนิเมะและหนังยอดฮิต เรามุ่งมั่นนำเสนอข้อมูลที่ถูกต้องและน่าสนใจสำหรับคนรักหนังทุกคน</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container section-padding">
+        <h2 class="text-center mb-4">ติดต่อเรา</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card p-4 shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">ชื่อ-นามสกุล</label>
+                            <input type="text" class="form-control" placeholder="กรอกชื่อของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">อีเมล</label>
+                            <input type="email" class="form-control" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">ข้อความ</label>
+                            <textarea class="form-control" rows="4" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">ส่งข้อมูล</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+            </div>
+            <p class="mb-0 text-muted">© 2025 Movie By 68092642 Porntipa</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">เธอผู้เปล่งประกายกว่าแสงดาว As Beautiful As You - รายละเอียด</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://s.isanook.com/mv/0/ud/34/174471/asbeautifulasyou.jpg?ip/resize/w728/q80/jpg" class="img-fluid rounded mb-3">
+                    <p><strong>จำนวน:</strong> 40 ตอน</p>
+                    <p><strong>นักแสดง:</strong> ถานซงอวิ้น, สวีข่าย , เหอรุ่ยเสียน, เกาหาน</p>
+                    <p><strong>เนื้อเรื่องย่อ:</strong> จี้ซิง บัณฑิตเก่งจากม.ชื่อดัง ตั้งใจสร้างอนาคตในด้านการงาน แต่โลกความจริงกลับไม่เป็นอย่างที่หวัง ทำงานมา 3 ปีก็ยังไม่ก้าวหน้า แถมยังเจออุปสรรคเล่นงานยับเยิน เธอตัดสินใจลาออกเพื่อสร้างธุรกิจของตน แล้วเธอก็ได้พบกับหานถิง นายทุนเลือดเย็นผู้ให้บทเรียนกับเธอ ที่ไหนได้ผู้คุมเกมอย่างเขากลับได้รู้จักความรัก</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> รักสุดป่วนของคุณชายสุดเป๊ะ Hello Mr.Gu - รายละเอียด</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://s.isanook.com/mv/0/ud/34/174471/hellomr.gu.jpg?ip/resize/w728/q80/jpg" class="img-fluid rounded mb-3">
+                    <p><strong>จำนวน:</strong> 30 ตอน </p>
+                    <p><strong>นักแสดง:</strong>  เฉินจิ้งเข่อ, เหยียนจื้อเชา, กัวอวิ๋นฉี, จูตานหนี, ซินรุ่ยฉี</p>
+                    <p><strong>เนื้อเรื่องย่อ:</strong> เรื่องราวของ CEO หนุ่มผู้ที่บุคลิกแตกต่างกันอย่างสิ้นเชิง ส่วนนางเอกก็เป็นสาวเจ้าปัญหา ทั้งสองคนเจอกันทีไรก็ไม่ถูกชะตากันอยู่เสมอ แต่ทว่าเหตุการณ์ไม่คาดคิดบางอย่างทำให้ทั้งสองต้องมาทำสัญญาแต่งงานกัน ภารกิจคู่รักจอมปลอมต้องมาใช้ชีวิตอยู่ด้วยกันจึงได้เริ่มต้นขึ้น</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">รักนี้ไม่ลืมเลือน Unforgettable Love - รายละเอียด</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://s.isanook.com/mv/0/ud/34/174471/unforgettablelove.jpg?ip/resize/w728/q80/jpg" class="img-fluid rounded mb-3">
+                    <p><strong>จำนวน:</strong> 24 ตอน</p>
+                    <p><strong>นักแสดง:</strong> เว่ยเจ๋อหมิง, หูอี้เสวียน , อวี๋อีเจี๋ย, สื่อชิงเหยียน</p>
+                    <p><strong>เนื้อเรื่องย่อ:</strong> ฉินอี่เยว่ที่ปรึกษาจิตวิทยาเด็กและเฮ่อเฉียวเยี่ยนซีอีโอบริษัท ทั้งสองแต่งงานก่อนจะตกหลุมรักกัน ฉินอี่เยว่ผู้อบอุ่นและใจดีค่อย ๆ รักษานิสัยสันโดษและเย็นชาของพ่อลูกตระกูลเฮ่อให้ดีขึ้น</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
